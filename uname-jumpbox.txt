@@ -1,0 +1,1 @@
+Linux dsmlp-login.ucsd.edu 3.10.0-1160.92.1.el7.x86_64 #1 SMP Tue Jun 20 11:48:01 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux

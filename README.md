@@ -38,4 +38,4 @@ Other supplemental data was added as needed for each assignment.
 
 The project began with individual contributions from students. The checkpoint written report also started out as individual efforts, but it 
 turned into a collaborative effort, consolidating the findings and insights gained throughout the project. 
-All coding tasks in this repository were independently completed by Gurman Dhaliwal. 
+Unless otherwise specified in the file name, all coding tasks in this repository were independently completed by Gurman Dhaliwal. 

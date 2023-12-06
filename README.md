@@ -10,6 +10,11 @@ Polygenic Risk Scores (PRS) are calculated as a weighted sum of an individual's 
 
 The project aims to unravel the genetic architecture underlying disease phenotypes and their expression patterns, addressing questions of genetic variation propagation through gene expression, correlations between genetic liabilities, and the elusive factors contributing to phenotypic variance.
 
+More Specifically, the project is as follows: 
+1. Identifying cis-eQTLs in 1000 Genomes LCLs
+2. Predicting Genetic Risk for Different Diseases in the 1000G Individuals and Plot the Professor's data on the Distribution. 
+
+
 ## Analysis Overview
 
 The following analyses form the core of this capstone project:
@@ -36,6 +41,4 @@ Other supplemental data was added as needed for each assignment.
 
 ## Contributions
 
-The project began with individual contributions from students. The checkpoint written report also started out as individual efforts, but it 
-turned into a collaborative effort, consolidating the findings and insights gained throughout the project. 
-Unless otherwise specified in the file name, all coding tasks in this repository were independently completed by Gurman Dhaliwal. 
+The quarter 1 project an application of all the skills we had learned each week. For the checkpoint, all the code was written by Gurman Dhaliwal. For the final project, Gurman did part 2 of the coding, started and cleaned the LaTeX template, and wrote the majority of the introduction, literature review, and the parts corresponding to part 2 of the project in project goals, methodology, results, and the conclusion. Lihao Liu completed part 1 of the coding, and did substantive editing to the final report, LaTeX formatting, and writing which included half of the project goals, methodology, and results. 

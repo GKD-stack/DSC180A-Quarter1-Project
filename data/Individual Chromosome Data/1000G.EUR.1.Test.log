@@ -1,0 +1,17 @@
+PLINK v2.00a5.2 64-bit (11 Oct 2023)
+Options in effect:
+  --bfile 1000G.EUR.1
+  --extract bed1 test_coordinates
+  --make-bed
+  --out LDREF/1000G.EUR.1.Test
+
+Hostname: LAPTOP-M0O6T1A2
+Working directory: C:\Users\Amandeep\Dropbox\DSC180
+Start time: Mon Oct 30 21:49:55 2023
+
+Random number seed: 1698727795
+16149 MiB RAM detected; reserving 8074 MiB for main workspace.
+Using up to 8 compute threads.
+Error: Failed to open 1000G.EUR.1.fam : No such file or directory.
+
+End time: Mon Oct 30 21:49:55 2023

@@ -1,0 +1,2 @@
+*.txt filter=lfs diff=lfs merge=lfs -text
+DSC180A[[:space:]]1000Genomes[[:space:]]Data/GD462.GeneQuantRPKM.50FN.samplename.resk10.txt filter=lfs diff=lfs merge=lfs -text

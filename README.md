@@ -62,10 +62,11 @@ Ensure you have the following installed:
 
 1. Open a Python environment where you have installed the necessary libraries.
 
-2. Execute the provided Jupyter Notebook "DSC180A-Q1-Project". The notebook includes steps for:
+2. Execute the provided Jupyter Notebook "Lihao_Liu_DSC180A_1000_Genomes". The notebook includes steps for:
    - Reading and preprocessing the gene expression and annotation data.
    - Conducting eQTL analysis for each chromosome.
    - Compiling the results into a comprehensive dataset.
+   - Saving the results to local folder
    - Filtering significant SNPs based on a certain p-value
 
    Here is an example snippet to get you started:

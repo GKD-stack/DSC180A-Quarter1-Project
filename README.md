@@ -36,6 +36,10 @@ The data employed in this project includes:
 - **Chromosomal Data (LDREF Folder)**: Contains BED, BIN, and FAM files for all chromosomes, facilitating the analysis of genotype data.
 - **Frequency File**: Accompanies the chromosomal data, providing allele frequency information.
 - **Expression Data (`expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
+- **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease. 
+
+## Clean this part up but just a start on my end
+
 
 Other supplemental data was added as needed for each assignment. 
 

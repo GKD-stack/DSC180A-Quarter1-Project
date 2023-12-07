@@ -1,4 +1,9 @@
-
+from pandas_plink import read_plink
+import pandas_plink as pdplink
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
 
 def plot_prs_dist(prfile_file_name, trait):
 """
@@ -10,7 +15,6 @@ ex) Mega Stroke
 """
   prs_data = pd.read_csv(f'{prfile_file_name}.profile', delim_whitespace=True)
   prs_data.head()
-  # plot the distribution
   sns.set(style="whitegrid")
   plt.figure(figsize=(10, 6))
   sns.histplot(prs_data['SCORE'], kde=True, color="skyblue", bins=30)
@@ -32,13 +36,15 @@ ex) Mega Stroke
   print(percentile)
   return percentile 
 
-def prepare_summary_stats_for_prs(input_file_name, output_file_name):
+def prepare_summary_stats_for_prs(input_file_name, input_columns, output_file_name):
   """
   input_file_name: Height.gwas.txt
+  input_columns: These are the columns that represent SNP, ALLELE, BETA in your specific file
+  ex) ['SNP', 'A1', 'OR']
   output_file_name: Height.formatted.gwas.txt
   """
   gwas_summary = pd.read_csv(f'{input_file_name}', sep='\t')
-  prs_data = gwas_summary[['SNP', 'A1', 'OR']].copy()
+  prs_data = gwas_summary[input_columns].copy()
   prs_data.columns = ['SNP', 'ALLELE', 'BETA']
   prs_data['ALLELE'] = prs_data['ALLELE'].str.upper()
   prs_data.to_csv(f'{output_file_name}', sep=' ', index=False)

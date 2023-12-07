@@ -38,6 +38,50 @@ The data employed in this project includes:
 - **Expression Data (`expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
 - **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease. 
 
+## Running the Analysis
+
+To run the analysis and reproduce the results, follow these steps:
+
+### Prerequisites
+
+Ensure you have the following installed:
+- Python (version 3.7 or later)
+- Required Python libraries: `pandas_plink`, `statsmodels`, `numpy`, `pandas`, `matplotlib`
+- PLINK 2.0 (for manipulating genetic data)
+
+### Data Setup
+
+1. Download the required data files:
+   - `GD462.GeneQuantRPKM.50FN.samplename.resk10.txt` (Gene expression data)
+   - `gene_annot.txt` (Gene annotation data)
+   - Chromosomal data files (`1000G.EUR.[chromosome number].bed`, `.bim`, `.fam`) for all chromosomes from the LDREF folder
+
+2. Place these files in a known directory on your local machine.
+
+### Running the Code
+
+1. Open a Python environment where you have installed the necessary libraries.
+
+2. Execute the provided Jupyter Notebook "DSC180A-Q1-Project". The notebook includes steps for:
+   - Reading and preprocessing the gene expression and annotation data.
+   - Conducting eQTL analysis for each chromosome.
+   - Compiling the results into a comprehensive dataset.
+   - Filtering significant SNPs based on a certain p-value
+
+   Here is an example snippet to get you started:
+   
+   ```python
+   import pandas as pd
+   import pandas_plink as pp
+   # ... other imports ...
+
+   # Read gene expression data
+   gene_expression_data = pd.read_csv('path/to/GD462.GeneQuantRPKM.50FN.samplename.resk10.txt', delimiter='\t')
+   # ... further steps ...
+
+   # eQTL analysis for each chromosome
+   # ... code for eQTL analysis ...
+
 ## Clean this part up but just a start on my end
 
 

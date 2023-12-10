@@ -38,7 +38,9 @@ The data employed in this project includes:
 - **Expression Data (`expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
 - **Preprocessed Summary Statistics Files for Diseases (`bone.txt (https://drive.google.com/file/d/1Jd_vY8_pcI4pynkxjww4wAjati1aNsC-/view?usp=sharing), alz_data.txt (https://drive.google.com/file/d/1EL6ubS50S2MWTDKP1vLTQuvWQFpplYKk/view?usp=sharing), megastroke.txt (https://drive.google.com/file/d/13MnzxAV51hg0tY1nUK3-nT9UfQmI6u5X/view?usp=sharing)`)**: These files were too large to be uploaded to GitHub. Download them from the Google Drive links. 
 - **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease.
-- **Polygenic Risk Scores for Diseases (`final_combined.bed, final_combined.bim, final_combined.fam`)**: Contains the data for the 1000G individuals merged with the Professor's data (do not share or make public). 
+- **Polygenic Risk Scores for Diseases (`final_combined.bed (https://drive.google.com/file/d/12lfwf73OY-7GX67dkLRuAf5TWqvfik07/view?usp=sharing), final_combined.bim (https://drive.google.com/file/d/1dWb4iLSBghtWilT5jR2EHo6rKS3NQ0bw/view?usp=sharing), final_combined.fam (https://drive.google.com/file/d/12sINX72LV0hU1EMo6RNB0QtkfuazCYIt/view?usp=sharing)`)**: Contains the data for the 1000G individuals merged with the Professor's data (do not share or make public).
+  
+ 
 ## Running the Analysis
 
 To run the analysis and reproduce the results, follow these steps:

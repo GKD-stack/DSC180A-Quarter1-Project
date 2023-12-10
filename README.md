@@ -36,8 +36,8 @@ The data employed in this project includes:
 - **Chromosomal Data (LDREF Folder)**: Contains BED, BIN, and FAM files for all chromosomes, facilitating the analysis of genotype data.
 - **Frequency File**: Accompanies the chromosomal data, providing allele frequency information.
 - **Expression Data (`expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
+- **Preprocessed Summary Statistics Files for Diseases (`bone.txt (https://drive.google.com/file/d/1Jd_vY8_pcI4pynkxjww4wAjati1aNsC-/view?usp=sharing), alz_data.txt (https://drive.google.com/file/d/1EL6ubS50S2MWTDKP1vLTQuvWQFpplYKk/view?usp=sharing), megastroke.txt (https://drive.google.com/file/d/13MnzxAV51hg0tY1nUK3-nT9UfQmI6u5X/view?usp=sharing)`)**: These files were too large to be uploaded to GitHub. Download them from the Google Drive links. 
 - **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease. 
-
 ## Running the Analysis
 
 To run the analysis and reproduce the results, follow these steps:

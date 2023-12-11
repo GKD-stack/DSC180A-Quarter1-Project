@@ -49,22 +49,23 @@ Ensure you have the following installed:
 - Required Python libraries: `pandas_plink`, `statsmodels`, `os`, `pandas`, `matplotlib`, `seaborn`, `scipy`
 - PLINK 2.0 (for manipulating genetic data)
 - (optional) bcftools (if you are going to include your own data)
+- Software that can unzip files (like winrar or 7-zip)
 
 ### Data Setup
 
 1. Download this repository
 
-2. Placing it in a known directory on your local machine.
+2. Open the `data` folder and unzip the `gene_expression.zip`. Save the `gene_expression.txt` file in that same directory
 
 ### Running the Code
 
 1. Make sure your Python environment has the necessary libraries installed.
 
-2. Execute the Python file "part1_eQTL_analysis.py" This file is responsible for:
+2. Execute the Python file `part1_eQTL_analysis.py` This file is responsible for:
    - Reading and preprocessing the gene expression and annotation data
    - Conducting eQTL analysis for each chromosome
    - Compiling the results into a comprehensive dataset
-   - Saving the results to the "results" folder
+   - Saving the results to the `results` folder
    - Filtering significant SNPs based on a certain p-value
    
    results of running this Python file:

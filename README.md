@@ -10,9 +10,9 @@ Polygenic Risk Scores (PRS) are calculated as a weighted sum of an individual's 
 
 The project aims to unravel the genetic architecture underlying disease phenotypes and their expression patterns, addressing questions of genetic variation propagation through gene expression, correlations between genetic liabilities, and the elusive factors contributing to phenotypic variance.
 
-More Specifically, the project is as follows: 
+More specifically, the project is as follows: 
 1. Identifying cis-eQTLs in 1000 Genomes LCLs
-2. Predicting Genetic Risk for Different Diseases in the 1000G Individuals and Plot the Professor's data on the Distribution. 
+2. Predicting Genetic Risk for Different Diseases in the 1000G Individuals and Plot the Professor's Data on the Distribution. 
 
 
 ## Analysis Overview
@@ -35,12 +35,9 @@ The data employed in this project includes:
 
 - **Chromosomal Data (LDREF Folder)**: Contains BED, BIN, and FAM files for all chromosomes, facilitating the analysis of genotype data.
 - **Frequency File**: Accompanies the chromosomal data, providing allele frequency information.
-- **Expression Data (`expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
-- **Preprocessed Summary Statistics Files for Diseases (`bone.txt (https://drive.google.com/file/d/1Jd_vY8_pcI4pynkxjww4wAjati1aNsC-/view?usp=sharing), alz_data.txt (https://drive.google.com/file/d/1EL6ubS50S2MWTDKP1vLTQuvWQFpplYKk/view?usp=sharing), megastroke.txt (https://drive.google.com/file/d/13MnzxAV51hg0tY1nUK3-nT9UfQmI6u5X/view?usp=sharing)`)**: These files were too large to be uploaded to GitHub. Download them from the Google Drive links. 
-- **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease.
-- **Polygenic Risk Scores for Diseases (`final_combined.bed (https://drive.google.com/file/d/12lfwf73OY-7GX67dkLRuAf5TWqvfik07/view?usp=sharing), final_combined.bim (https://drive.google.com/file/d/1dWb4iLSBghtWilT5jR2EHo6rKS3NQ0bw/view?usp=sharing), final_combined.fam (https://drive.google.com/file/d/12sINX72LV0hU1EMo6RNB0QtkfuazCYIt/view?usp=sharing)`)**: Contains the data for the 1000G individuals merged with the Professor's data (do not share or make public).
-  
- 
+- **Expression Data (`gene_expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
+- **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease. 
+
 ## Running the Analysis
 
 To run the analysis and reproduce the results, follow these steps:
@@ -49,48 +46,58 @@ To run the analysis and reproduce the results, follow these steps:
 
 Ensure you have the following installed:
 - Python (version 3.7 or later)
-- Required Python libraries: `pandas_plink`, `statsmodels`, `numpy`, `pandas`, `matplotlib`
+- Required Python libraries: `pandas_plink`, `statsmodels`, `os`, `pandas`, `matplotlib`, `seaborn`, `scipy`
 - PLINK 2.0 (for manipulating genetic data)
+- (optional) bcftools (if you are going to include your own data)
 
 ### Data Setup
 
-1. Download the required data files:
-   - `GD462.GeneQuantRPKM.50FN.samplename.resk10.txt` (Gene expression data)
-   - `gene_annot.txt` (Gene annotation data)
-   - Chromosomal data files (`1000G.EUR.[chromosome number].bed`, `.bim`, `.fam`) for all chromosomes from the LDREF folder
+1. Download this repository
 
-2. Place these files in a known directory on your local machine.
+2. Placing it in a known directory on your local machine.
 
 ### Running the Code
 
-1. Open a Python environment where you have installed the necessary libraries.
+1. Make sure your Python environment has the necessary libraries installed.
 
-2. Execute the provided Jupyter Notebook "Lihao_Liu_DSC180A_1000_Genomes". The notebook includes steps for:
-   - Reading and preprocessing the gene expression and annotation data.
-   - Conducting eQTL analysis for each chromosome.
-   - Compiling the results into a comprehensive dataset.
-   - Saving the results to local folder
+2. Execute the Python file "part1_eQTL_analysis.py" This file is responsible for:
+   - Reading and preprocessing the gene expression and annotation data
+   - Conducting eQTL analysis for each chromosome
+   - Compiling the results into a comprehensive dataset
+   - Saving the results to the "results" folder
    - Filtering significant SNPs based on a certain p-value
-
-   Here is an example snippet to get you started:
    
-   ```python
-   import pandas as pd
-   import pandas_plink as pp
-   # ... other imports ...
+   results of running this Python file:
+   - file "eQTL_results.txt" in the "results" folder containing the full resulting dataset from the eQTL analysis
+   - file "eQTL_results.sig.txt" in the "results" folder containing only the significant values that we analyzed in our report
 
-   # Read gene expression data
-   gene_expression_data = pd.read_csv('path/to/GD462.GeneQuantRPKM.50FN.samplename.resk10.txt', delimiter='\t')
-   # ... further steps ...
+3. Open the Jupyter notebook "part2_PRS.ipynb" and run all the cells, our specific analysis results are located under the "Our Analysis" section. Provided in this document are:
+    - Our steps and additional instructions for replicating our analysis with your own data
+    - PRS Analysis for several diseases and genetic predispositions for our mentor
 
-   # eQTL analysis for each chromosome
-   # ... code for eQTL analysis ...
+## Repository Layout
 
-## Clean this part up but just a start on my end
+**data** (contains our data files)
+    **LDREF** (Chromosomal data for 1000G individuals)
+    **profiles** (Polygenic Risk Scores for selected Diseases)
+        **prs_for_alz.profile** (PRS for Alzheimer's Disease)
+        **prs_for_bone.profile** (PRS for Bone Density and Fracture )
+        **prs_for_mgs.profile** (PRS for Mega Stroke)
+    **gene_annoation.txt** (gene annotation data)
+    **gene_expression.txt** (gene expression data)
+    
+**results** (contains code results from our analysis)
+    **eQTL_result.txt** (Full result from eQTL analysis)
+    **eQTL_result_sig.txt** (Significant results from eQTL analysis)
 
+**src**
+    **part1_eQTL_analysis.py** (Runs the eQTL analysis for 1000G individuals)
+    **part2_PRS.ipynb** (Instructions and results for our PRS analysis)
+    **scripts_prs.py** (Scripts and methods used to conduct PRS analysis)
 
-Other supplemental data was added as needed for each assignment. 
+**README.md** (Information on repository)
+
 
 ## Contributions
 
-The quarter 1 project an application of all the skills we had learned each week. For the checkpoint, all the code was written by Gurman Dhaliwal. For the final project, Gurman did part 2 of the coding, started and cleaned the LaTeX template, and wrote the majority of the introduction, literature review, and the parts corresponding to part 2 of the project in project goals, methodology, results, and the conclusion. Lihao Liu completed part 1 of the coding, and did substantive editing to the final report, LaTeX formatting, and writing which included half of the project goals, methodology, and results. 
+The quarter 1 project was an application of all the skills we had learned each week. For the checkpoint, all the code was written by Gurman Dhaliwal. For the final project, Gurman did part 2 of the coding, started and cleaned the LaTeX template, and wrote the majority of the introduction, literature review, and the parts corresponding to part 2 of the project in project goals, methodology, results, and conclusion. Lihao Liu completed part 1 of the coding and did substantive editing to the final report, LaTeX formatting, and writing which included half of the project goals, methodology, and results. Anton Beliakov organized and structured the repository, rewrote the code to make our analysis reproducible, and assisted in the writing of the introduction, writing, and organization of the literature review as well as general report editing.

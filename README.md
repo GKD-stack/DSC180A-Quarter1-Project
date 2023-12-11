@@ -77,25 +77,25 @@ Ensure you have the following installed:
 
 ## Repository Layout
 
-**data** (contains our data files)
-    **LDREF** (Chromosomal data for 1000G individuals)
-    **profiles** (Polygenic Risk Scores for selected Diseases)
-        **prs_for_alz.profile** (PRS for Alzheimer's Disease)
-        **prs_for_bone.profile** (PRS for Bone Density and Fracture )
-        **prs_for_mgs.profile** (PRS for Mega Stroke)
-    **gene_annoation.txt** (gene annotation data)
-    **gene_expression.txt** (gene expression data)
+**data** (contains our data files)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**LDREF** (Chromosomal data for 1000G individuals)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**profiles** (Polygenic Risk Scores for selected Diseases)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**prs_for_alz.profile** (PRS for Alzheimer's Disease)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**prs_for_bone.profile** (PRS for Bone Density and Fracture)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**prs_for_mgs.profile** (PRS for Mega Stroke)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**gene_annoation.txt** (gene annotation data)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**gene_expression.txt** (gene expression data)  
     
-**results** (contains code results from our analysis)
-    **eQTL_result.txt** (Full result from eQTL analysis)
-    **eQTL_result_sig.txt** (Significant results from eQTL analysis)
+**results** (contains code results from our analysis)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**eQTL_result.txt** (Full result from eQTL analysis)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**eQTL_result_sig.txt** (Significant results from eQTL analysis)  
 
-**src**
-    **part1_eQTL_analysis.py** (Runs the eQTL analysis for 1000G individuals)
-    **part2_PRS.ipynb** (Instructions and results for our PRS analysis)
-    **scripts_prs.py** (Scripts and methods used to conduct PRS analysis)
+**src** (contains our code and scripts)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**part1_eQTL_analysis.py** (Runs the eQTL analysis for 1000G individuals)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**part2_PRS.ipynb** (Instructions and results for our PRS analysis)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**scripts_prs.py** (Scripts and methods used to conduct PRS analysis)  
 
-**README.md** (Information on repository)
+**README.md** (Information on repository)  
 
 
 ## Contributions

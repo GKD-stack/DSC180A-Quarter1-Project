@@ -67,9 +67,7 @@ Ensure you have the following installed:
    
 ### Running the Code
 
-1. Make sure your Python environment has the necessary libraries installed.
-
-2. Execute the Python file `part1_eQTL_analysis.py` This file is responsible for:
+1. Execute the Python file `part1_eQTL_analysis.py` This file is responsible for:
    - Reading and preprocessing the gene expression and annotation data
    - Conducting eQTL analysis for each chromosome
    - Compiling the results into a comprehensive dataset
@@ -80,7 +78,7 @@ Ensure you have the following installed:
    - file `eQTL_results.txt` in the `results` folder containing the full resulting dataset from the eQTL analysis
    - file `eQTL_results.sig.txt` in the `results` folder containing only the significant values that we analyzed in our report
 
-3. Open the Jupyter notebook "part2_PRS.ipynb" and run all the cells, our specific analysis results are located under the "Our Analysis" section. Provided in this document are:
+2. Open the Jupyter notebook "part2_PRS.ipynb" and run all the cells, our specific analysis results are located under the "Our Analysis" section. Provided in this document are:
     - Our steps and additional instructions for replicating our analysis with different data
     - PRS Analysis for several diseases and genetic predispositions for our mentor
 

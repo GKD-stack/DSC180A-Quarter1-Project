@@ -62,8 +62,9 @@ Ensure you have the following installed:
    - bone.txt (https://drive.google.com/file/d/1Jd_vY8_pcI4pynkxjww4wAjati1aNsC-/view?usp=sharing)
    - alz_data.txt (https://drive.google.com/file/d/1EL6ubS50S2MWTDKP1vLTQuvWQFpplYKk/view?usp=sharing)
    - megastroke.txt (https://drive.google.com/file/d/13MnzxAV51hg0tY1nUK3-nT9UfQmI6u5X/view?usp=sharing)
-   Place them all in the `data` folder
 
+4. Place these three files in the `data` folder
+   
 ### Running the Code
 
 1. Make sure your Python environment has the necessary libraries installed.
@@ -76,15 +77,17 @@ Ensure you have the following installed:
    - Filtering significant SNPs based on a certain p-value
    
    results of running this Python file:
-   - file "eQTL_results.txt" in the "results" folder containing the full resulting dataset from the eQTL analysis
-   - file "eQTL_results.sig.txt" in the "results" folder containing only the significant values that we analyzed in our report
+   - file `eQTL_results.txt` in the `results` folder containing the full resulting dataset from the eQTL analysis
+   - file `eQTL_results.sig.txt` in the `results` folder containing only the significant values that we analyzed in our report
 
 3. Open the Jupyter notebook "part2_PRS.ipynb" and run all the cells, our specific analysis results are located under the "Our Analysis" section. Provided in this document are:
     - Our steps and additional instructions for replicating our analysis with different data
     - PRS Analysis for several diseases and genetic predispositions for our mentor
 
    results of running this Jupyter notebook file:
-   - 
+   - file `alz_data.gwas.txt` in the `results` folder containing the cleaned GWAS data for Alzheimer's disease
+   - file `bone.gwas.txt` in the `results` folder containing the cleaned GWAS data for Bone density and fracture
+   - file `megastroke.gwas.txt` in the `results` folder containin the cleaned GWAS data for Mega stroke
 
 ## Repository Layout
 
@@ -95,11 +98,14 @@ Ensure you have the following installed:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**prs_for_bone.profile** (PRS for Bone Density and Fracture)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**prs_for_mgs.profile** (PRS for Mega Stroke)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**gene_annoation.txt** (gene annotation data)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**gene_expression.txt** (gene expression data)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**gene_expression.zip** (gene expression data in a zip file)  
     
 **results** (contains code results from our analysis)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**alz_data.gwas.txt** (Cleaned Alzheimer's disease GWAS data)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**bone.gwas.txt** (Cleaned Bone Density and Fracture GWAS data)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**eQTL_result.txt** (Full result from eQTL analysis)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**eQTL_result_sig.txt** (Significant results from eQTL analysis)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**megastroke.gwas.txt** (Cleaned Mega Stroke GWAS data)
 
 **src** (contains our code and scripts)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**part1_eQTL_analysis.py** (Runs the eQTL analysis for 1000G individuals)  
@@ -111,4 +117,4 @@ Ensure you have the following installed:
 
 ## Contributions
 
-The quarter 1 project was an application of all the skills we had learned each week. For the checkpoint, all the code was written by Gurman Dhaliwal. For the final project, Gurman did part 2 of the coding, started and cleaned the LaTeX template, and wrote the majority of the introduction, literature review, and the parts corresponding to part 2 of the project in project goals, methodology, results, and conclusion. Lihao Liu completed part 1 of the coding and did substantive editing to the final report, LaTeX formatting, and writing which included half of the project goals, methodology, and results. Anton Beliakov organized and structured the repository, rewrote the code to make our analysis reproducible, and assisted in the writing of the introduction, writing, and organization of the literature review as well as general report editing.
+The quarter 1 project was an application of all the skills we had learned each week. For the checkpoint, all the code was written by Gurman Dhaliwal. For the final project, Gurman did part 2 of the coding, started and cleaned the LaTeX template, and wrote the majority of the introduction, literature review, and the parts corresponding to part 2 of the project in project goals, methodology, results, and conclusion. Lihao Liu completed part 1 of the coding and did substantive editing to the final report, LaTeX formatting, and writing which included half of the project goals, methodology, and results. Anton Beliakov organized and structured the repository, rewrote the code to make our analysis reproducible, and assisted in the writing of the introduction, writing, and organization of the literature review as well as general report and code editing.

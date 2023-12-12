@@ -11,18 +11,18 @@ main_dir = os.getcwd()[:-3]
 
 
 # Read in the GWAS summary statistics and rename them to fit stats
-def prepare_summary_stats_for_prs(input_file_name, input_columns, output_file_name):
+def prepare_summary_stats_for_prs(input_file_name, input_columns, output_file_name, separator):
   """
   input_file_name: Height.gwas.txt
   input_columns: These are the columns that represent SNP, ALLELE, BETA in your specific file
   ex) ['SNP', 'A1', 'OR']
   output_file_name: Height.formatted.gwas.txt
   """
-  gwas_summary = pd.read_csv(f'{input_file_name}', sep='\t')
+  gwas_summary = pd.read_csv(main_dir + "data/" + input_file_name, sep=separator)
   prs_data = gwas_summary[input_columns].copy()
   prs_data.columns = ['SNP', 'ALLELE', 'BETA']
   prs_data['ALLELE'] = prs_data['ALLELE'].str.upper()
-  prs_data.to_csv(f'{output_file_name}', sep=' ', index=False)
+  prs_data.to_csv(main_dir + "results/" + output_file_name, sep=' ', index=False)
     
 
 # Method for making PRS plots

@@ -76,8 +76,8 @@ Ensure you have the following installed:
    
    results of running this Python file:
    - file `eQTL_results.txt` in the `results` folder containing the full resulting dataset from the eQTL analysis
-   - file `eQTL_results.sig.txt` in the `results` folder containing only the significant values that we analyzed in our report
-
+   - file `eQTL_results.sig.txt` in the `results` folder containing only the significant values that we analyzed in our report  
+   
 2. Open the Jupyter notebook "part2_PRS.ipynb" and run all the cells, our specific analysis results are located under the "Our Analysis" section. Provided in this document are:
     - Our steps and additional instructions for replicating our analysis with different data
     - PRS Analysis for several diseases and genetic predispositions for our mentor

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This capstone project, part of the Data Science Capstone Domain of Inquiry (DSC 180AB A17 2022-2023), focuses on the genetic risk prediction of gene expression, complex traits, and polygenic diseases. Developed by Tiffany Amariuta, this project explores the utility of polygenic risk scores (PRS) in assessing an individual's genetic predisposition to various phenotypes.
+This capstone project, part of the Data Science Capstone Domain of Inquiry (DSC 180AB A02), focuses on the genetic risk prediction of gene expression, complex traits, and polygenic diseases. Developed by Tiffany Amariuta, this project explores the utility of polygenic risk scores (PRS) in assessing an individual's genetic predisposition to various phenotypes.
 
 ## Project Description
 

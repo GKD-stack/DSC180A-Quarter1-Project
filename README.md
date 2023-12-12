@@ -87,6 +87,12 @@ Ensure you have the following installed:
    - file `bone.gwas.txt` in the `results` folder containing the cleaned GWAS data for Bone density and fracture
    - file `megastroke.gwas.txt` in the `results` folder containin the cleaned GWAS data for Mega stroke
 
+For this section, you could also run these commands from your Command Prompt:
+
+pip install requirements.txt
+python run.py 
+
+
 ## Repository Layout
 
 **data** (contains our data files)  

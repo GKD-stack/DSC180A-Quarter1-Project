@@ -36,7 +36,8 @@ The data employed in this project includes:
 - **Chromosomal Data (LDREF Folder)**: Contains BED, BIN, and FAM files for all chromosomes, facilitating the analysis of genotype data.
 - **Frequency File**: Accompanies the chromosomal data, providing allele frequency information.
 - **Expression Data (`gene_expression.txt`)**: Contains transcriptomic data used for eQTL analysis.
-- **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease. 
+- **Polygenic Risk Scores for Diseases (`prs_for_bone.profile, prs_for_alz.profile, prs_for_mgs.profile`)**: Contains the PRS for each individual and the professor for that particular disease.
+- **Preprocessed Summary Statistics Files for Diseases (bone.txt (https://drive.google.com/file/d/1Jd_vY8_pcI4pynkxjww4wAjati1aNsC-/view?usp=sharing), alz_data.txt (https://drive.google.com/file/d/1EL6ubS50S2MWTDKP1vLTQuvWQFpplYKk/view?usp=sharing), megastroke.txt (https://drive.google.com/file/d/13MnzxAV51hg0tY1nUK3-nT9UfQmI6u5X/view?usp=sharing))**: These files were too large to upload to GitHub. You can download them from the Google Drive links.
 
 ## Running the Analysis
 
@@ -57,6 +58,12 @@ Ensure you have the following installed:
 
 2. Open the `data` folder and unzip the `gene_expression.zip`. Save the `gene_expression.txt` file in that same directory
 
+3. Download these three files from Google drive
+   - bone.txt (https://drive.google.com/file/d/1Jd_vY8_pcI4pynkxjww4wAjati1aNsC-/view?usp=sharing)
+   - alz_data.txt (https://drive.google.com/file/d/1EL6ubS50S2MWTDKP1vLTQuvWQFpplYKk/view?usp=sharing)
+   - megastroke.txt (https://drive.google.com/file/d/13MnzxAV51hg0tY1nUK3-nT9UfQmI6u5X/view?usp=sharing)
+   Place them all in the `data` folder
+
 ### Running the Code
 
 1. Make sure your Python environment has the necessary libraries installed.
@@ -73,8 +80,11 @@ Ensure you have the following installed:
    - file "eQTL_results.sig.txt" in the "results" folder containing only the significant values that we analyzed in our report
 
 3. Open the Jupyter notebook "part2_PRS.ipynb" and run all the cells, our specific analysis results are located under the "Our Analysis" section. Provided in this document are:
-    - Our steps and additional instructions for replicating our analysis with your own data
+    - Our steps and additional instructions for replicating our analysis with different data
     - PRS Analysis for several diseases and genetic predispositions for our mentor
+
+   results of running this Jupyter notebook file:
+   - 
 
 ## Repository Layout
 

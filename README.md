@@ -87,10 +87,14 @@ Ensure you have the following installed:
    - file `bone.gwas.txt` in the `results` folder containing the cleaned GWAS data for Bone density and fracture
    - file `megastroke.gwas.txt` in the `results` folder containin the cleaned GWAS data for Mega stroke
 
-For this section, you could also run these commands from your Command Prompt:
-
-pip install requirements.txt
-python run.py 
+For this section, you could also run these commands from your Command Prompt. 
+1. **Install Required Packages**:
+   Run the following command to install the necessary Python packages from the `requirements.txt` file:
+ `pip install -r src/requirements.txt`
+2. **Run the analysis**
+  Run the following command to generate the processed summary statistics files with the .gwas extension, which you can use with the plink commands provided in the analysis part 2 notebook for futher analysis. 
+ `python src/run.py`
+Check the results folder. 
 
 
 ## Repository Layout
@@ -115,6 +119,8 @@ python run.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**part1_eQTL_analysis.py** (Runs the eQTL analysis for 1000G individuals)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**part2_PRS.ipynb** (Instructions and results for our PRS analysis)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**scripts_prs.py** (Scripts and methods used to conduct PRS analysis)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**requirements.txt** (The required packages for Part 2 of the project)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**run.py** (The executable script to generating the prepared summary statistics for PLINK)  
 
 **README.md** (Information on repository)  
 
